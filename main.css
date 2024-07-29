@@ -10,7 +10,7 @@ body {
 .calculator {
     border-radius: 15px;
     width: 320px;
-    height: 540px;
+    height: 520px;
     padding: 40px;
     overflow: hidden;
     box-shadow:
@@ -25,14 +25,12 @@ body {
 
 #mainContent{
     width: 320px;
-    height: 520px;
+    height: 100%;
     display: flex;
-    margin-top: 10px;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
     justify-content: center;
-    /* border: 1px solid purple; */
     border-radius: 15px;
     background-color: #222;
     position: relative;
@@ -42,7 +40,7 @@ body {
     top: 15px;
     left: 0;
     width: 100%;
-    height: 30PX;
+    height: 5.55555%;
     color: rgb(150, 150, 150);
     text-indent: 10px;
     background-color: transparent;
@@ -50,10 +48,9 @@ body {
 }
 #display {
     width: 100%;
-    height: 100px;
+    height: 18.5185%;
     margin-bottom: 20px;
     font-size: 56px;
-    /* text-align: right; */
     display: flex;
     align-items: start;
     justify-content: start;
@@ -61,7 +58,6 @@ body {
     border: none;
     background-color: #222;
     color: white;
-    /* border: 1px solid red; */
     background-color: #333;
     text-indent: 20px;
 }
@@ -71,14 +67,11 @@ body {
     grid-template-columns: repeat(4, 1fr);
     background-color: #222;
     width: 100%;
-    height: 360px;
-    /* border-radius: 10%; */
-    /* background-color: blue; */
+    height: 66.6666%;
 }
 
 .btn, #equalBtn {
     width: 100%;
-    height: 70px;
     font-size: 22px;
     border: none;
     color: #f0f0f0;
@@ -89,13 +82,13 @@ body {
 }
 
 .btn{
-    /* margin: 2px 4px; */
+    height: 95%;
     border-radius: 10%;
     background-color: #444;
 }
 
 #equalBtn{
-    height: 70px;
+    height: 12.9629%;
     background-color: rgba(250,150,70,1);
 }
 

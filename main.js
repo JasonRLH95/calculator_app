@@ -48,13 +48,11 @@ function appendNumber(number) {
 
 // ----------------- setting the operator to calculate, subdisplay the first value and operator chosen -----------------
 function appendOperation(operation) {
-    // if(canCalculate){
         firstValue = display.value;
         operator = operation;
         canCalculate = true;
         appendSecondNumber();
         subDisplay.value += `${firstValue} ${operation} `;
-    // }
 }
 
 
