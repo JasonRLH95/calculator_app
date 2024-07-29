@@ -87,8 +87,13 @@ function clearDisplay() {
 
 // ----------------- calculating by click on equal button -----------------
 function calculate() {
+    if(canCalculate){
+        secondValue = display.value;
+    }
+    else if(!canCalculate){
+        firstValue = display.value;
+    }
     canCalculate = false;
-    secondValue = display.value;
     try {
         display.value = eval(firstValue + operator + secondValue);
         subDisplay.value = "";
