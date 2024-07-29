@@ -34,8 +34,6 @@ function appendNumber(number) {
         if(display.value.length >= 6){
             if(initSize > 20){
                 initSize -= 3;
-                console.log("length: "+display.value.length);
-                console.log("font-size: "+initSize);
             }
             display.style.fontSize = `${initSize}px`;
         }
@@ -99,7 +97,6 @@ function calculate() {
     try {
         display.value = eval(firstValue + operator + secondValue);
         subDisplay.value = "";
-        console.log("final length: "+display.value.length);
         if(display.value.length < 10){
             display.style.fontSize = "56px"
         }
@@ -117,7 +114,6 @@ function calculate() {
 
 // ----------------- body listening to keydown events to calculate -----------------
 const calcByKeyboard = (key)=>{
-    console.log(key.key)
     if(key.key == "+" || key.key == "-" || key.key == "*" || key.key == "/"){
         appendOperation(key.key)
     }
