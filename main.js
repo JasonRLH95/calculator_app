@@ -51,6 +51,7 @@ function appendOperation(operation) {
     // if(canCalculate){
         firstValue = display.value;
         operator = operation;
+        canCalculate = true;
         appendSecondNumber();
         subDisplay.value += `${firstValue} ${operation} `;
     // }
