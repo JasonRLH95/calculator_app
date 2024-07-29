@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    margin: 0;
+}
+
+.calculator {
+    border-radius: 15px;
+    width: 320px;
+    height: 540px;
+    padding: 40px;
+    overflow: hidden;
+    box-shadow:
+    6px 3px  grey,
+    12px 12px 20px #444, 
+    25px 25px 60px rgba(0, 0, 0, 1);
+
+    border-left: 1px solid silver;
+    border-top: 1px solid silver;
+    background-color: #222;
+}
+
+#mainContent{
+    width: 320px;
+    height: 520px;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    /* border: 1px solid purple; */
+    border-radius: 15px;
+    background-color: #222;
+    position: relative;
+}
+#subDisplay{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 30PX;
+    color: rgb(150, 150, 150);
+    text-indent: 10px;
+    background-color: transparent;
+    border: none;
+}
+#display {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    font-size: 56px;
+    /* text-align: right; */
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding: 30px;
+    border: none;
+    background-color: #222;
+    color: white;
+    /* border: 1px solid red; */
+    background-color: #333;
+    text-indent: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #222;
+    width: 100%;
+    height: 360px;
+    /* border-radius: 10%; */
+    /* background-color: blue; */
+}
+
+.btn, #equalBtn {
+    width: 100%;
+    height: 70px;
+    font-size: 22px;
+    border: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn{
+    /* margin: 2px 4px; */
+    border-radius: 10%;
+    background-color: #444;
+}
+
+#equalBtn{
+    height: 70px;
+    background-color: rgba(250,150,70,1);
+}
+
+button:hover {
+    background-color: #d4d4d4;
+}
+
+button:active {
+    background-color: #c8c8c8;
+}
