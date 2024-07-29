@@ -68,7 +68,9 @@ function appendSecondNumber(){
 
 // ----------------- delete the last character by backspace key -----------------
 function deleteLast(){
-    display.value = display.value.substring(0,display.value.length-1);
+    if(canCalculate){
+        display.value = display.value.substring(0,display.value.length-1);
+    }
 }
 
 
